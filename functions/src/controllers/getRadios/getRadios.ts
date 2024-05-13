@@ -9,7 +9,7 @@ const db = admin.firestore();
 
 export const getRadios = onRequest({
     cors:
-        ['radio-fl.web.app', 'localhost:60065'],
+        ['*'],
     enforceAppCheck: true
 }, (req, res) => {
     const radios: RadioModel[] = [];
